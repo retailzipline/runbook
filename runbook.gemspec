@@ -32,6 +32,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "activesupport", ">= 5.0.1.x", "< 7.0"
+  spec.add_runtime_dependency "mutex_m"
+  spec.add_runtime_dependency "ostruct"
   spec.add_runtime_dependency "method_source", "~> 1.0"
   spec.add_runtime_dependency "ruby2_keywords", "~> 0.0.4"
   spec.add_runtime_dependency "sshkit", "1.21.0"
