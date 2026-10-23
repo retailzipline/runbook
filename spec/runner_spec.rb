@@ -1167,9 +1167,9 @@ OUTPUT
       [
         "Runbook::Entities::Book: My Book [:redhat] {}",
         "Runbook::Entities::Setup: Setup [:test] {}",
-        "Runbook::Entities::Section: My Section [:test] {:env=>:prod}",
+        "Runbook::Entities::Section: My Section [:test] #{{env: :prod}.inspect}",
         "Runbook::Entities::Step: Skip me [:skip] {}",
-        "Runbook::Entities::Step:  [:test, :skip] {:env=>:stg}",
+        "Runbook::Entities::Step:  [:test, :skip] #{{env: :stg}.inspect}",
       ]
     end
 
